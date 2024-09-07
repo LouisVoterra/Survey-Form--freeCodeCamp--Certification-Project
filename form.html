@@ -4,21 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div>
-        <h1>This is First Css Assignment</h1>
-        <hr>
-        <h2>What is CSS?</h2>
-        <ol>
-            <li>CSS stands for Cascading Style Sheets.</li><br>
-            <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media.</li><br>
-            <li><span class="line">Css is not neccesary</span> <span class="back">CSS saves a lot of work.</span> It can control the layout of multiple web pages all at once</li><br>
-            <li><span class="underline">External stylesheets are stored in CSS files.</span></li>
-        </ol>
-        <h2>CSS can be added to HTML documents in 3 ways:</h2>
-    </div>
-    
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description"><i>Thank you for taking the time to help us improve the platform</i></p>
+    <form  id="survey-form" action="">
+        <fieldset>
+            <label id="name-label">Name :</label><input type="text" id="name" placeholder="Enter your name" required><br><br>
+            <label id="email-label">Email: </label><input type="email" id="email" placeholder="Enter your email" required><br><br>
+            <label id="number-label">Age: </label><input type="number" id="number" placeholder="Enter your age" min="14" max="100" required><br><br>
+            <label id="e-label">Which option best describes your current role?</label>
+            <select id="dropdown">
+                <option disabled>Select your role</option>
+                <option>UI/UX</option>
+                <option>Front End Developer</option>
+                <option>Backend Developer</option>
+                <option>Data Scientist</option>
+                <option>AI/Machine Learning Engineer</option>
+                <option>Database Specialization</option>
+                <option>Android Developer</option>
+                <option>Cyber Security</option>
+                <option>Data Analyst</option>
+                <option>Data Engineering</option>
+                <option>System Analyst</option>
+                <option>Other</option>
+            </select><br><br>
+            <label>Would you recommend freeCodeCamp to a friend?</label>
+            <input type="radio" name="recommend" value="definitely">Definitely<br>
+            <input type="radio" name="recommend" value="maybe">Maybe<br>
+            <input type="radio" name="recommend" value="not sure">Not sure<br><br>
+            <label>What would you like to see improved? (Check all that apply)</label><br>
+            <input type="checkbox" value="front-end">Front-end Projects<br>
+            <input type="checkbox" value="back-end">Back-end Projects<br>
+            <input type="checkbox" value="data-science">Data Science<br>
+            <input type="checkbox" value="challenges">Challenges<br>
+            <input type="checkbox" value="open-source">Open Source Community<br>
+            <input type="checkbox" value="gitter">Gitter help rooms<br>
+            <input type="checkbox" value="videos">Videos<br>
+            <input type="checkbox" value="city-meetups">City Meetups<br>
+            <input type="checkbox" value="wiki">Wiki<br>
+            <input type="checkbox" value="forum">Forum<br>
+            <input type="checkbox" value="additional-courses">Additional Courses<br><br>
+            <label>Any comments or suggestions?</label>
+            <textarea id="comments" rows="4" cols="50">Enter your comment here...</textarea><br><br>
+            <input type="submit" id="submit">
+        </fieldset>
+    </form>
 </body>
 </html>

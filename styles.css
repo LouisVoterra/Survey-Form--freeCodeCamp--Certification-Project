@@ -1,3 +1,15 @@
-.line{
-    background-origin: padding-box;
+body{
+    background-color: rgb(108, 171, 234);
 }
+
+h1,p{
+    text-align: center;
+    color: white;
+}
+
+h1{
+    margin-top: 70px;
+}
+
+
+
